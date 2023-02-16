@@ -45,3 +45,35 @@ body {
   font-size: 15px;
   font-weight: 400;
 }
+
+/* ----- HEADER ----- */
+.header {
+  width: 100%;
+  padding: var(--padding-container);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+}
+.nav {
+  padding: 1em;
+}
+.list-links {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+.link {
+  margin: 0 1em;
+  display: block;
+}
+.link__text {
+  text-decoration: none;
+  color: var(--dark-grayish-blue);
+}
+.link__text:hover {
+  color: var(--soft-red);
+}
