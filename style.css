@@ -40,6 +40,7 @@ body {
   width: 100vw;
   min-height: 100vh;
   background-color: var(--off-white);
+  overflow-x: hidden;
 
   font-family: "Inter";
   font-size: 15px;
@@ -47,6 +48,7 @@ body {
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 /* ----- HEADER ----- */
@@ -143,4 +145,53 @@ body {
 
 .description__button:hover {
   background-color: var(--very-dark-blue);
+}
+
+/* ----- ASIDE ----- */
+.aside {
+  width: 26%;
+  padding: 2em;
+  background-color: var(--very-dark-blue);
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aside__title {
+  margin-bottom: 0.8em;
+  color: var(--soft-orange);
+
+  text-align: left;
+  font-weight: 800;
+  font-size: 2.5em;
+}
+
+.list-new {
+  width: 100%;
+  list-style: none;
+}
+
+.new {
+  padding: 1em 0;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+
+.new__title {
+  margin-bottom: 0.5em;
+  color: var(--off-white);
+
+  font-weight: 800;
+  font-size: 1.34em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.new__title:hover {
+  color: var(--soft-orange);
+}
+
+.new__paragraph {
+  color: var(--dark-grayish-blue);
+  line-height: 1.6;
 }
