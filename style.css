@@ -23,7 +23,8 @@
   --grayish-blue: hsl(233, 8%, 79%);
   --dark-grayish-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
-  --padding-container: 3em 10em;
+  --padding-container: 2em 10em;
+  --padding-container-mobile: 2em;
 }
 
 * {
@@ -56,6 +57,7 @@ body {
 .header {
   width: 100%;
   padding: var(--padding-container);
+  padding-top: 3em;
 
   display: flex;
   align-items: center;
@@ -66,6 +68,10 @@ body {
 }
 .nav {
   padding: 1em 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .list-links {
   list-style: none;
@@ -77,6 +83,17 @@ body {
   margin: 0 1em;
   display: block;
 }
+
+.link--button {
+  display: none;
+}
+
+#button-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
 .link__text {
   text-align: center;
   text-decoration: none;
@@ -91,16 +108,15 @@ body {
 .main {
   max-width: 1440px;
   padding: var(--padding-container);
-  overflow: hidden;
 
   display: flex;
-
   justify-content: space-between;
   gap: 2em;
 }
 
 .section {
   width: 66%;
+  overflow: hidden;
 }
 
 .main__image {
@@ -111,9 +127,10 @@ body {
 .info {
   width: 100%;
   margin-top: 2em;
-  display: flex;
 
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
 }
 
 .info__title {
@@ -266,8 +283,8 @@ body {
 /* ----- FOOTER ----- */
 .footer {
   width: 100%;
-
-  padding: var(--padding-container);
+  margin-top: 1em;
+  padding: 3em;
   background-color: var(--very-dark-blue);
   color: var(--off-white);
 
@@ -277,4 +294,71 @@ body {
 
 .footer__link {
   color: var(--soft-orange);
+}
+
+@media (max-width: 880px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ----- HEADER ----- */
+  .header {
+    padding: var(--padding-container-mobile);
+  }
+
+  .link {
+    display: none;
+  }
+
+  .link--button {
+    display: block;
+  }
+
+  /* ----- MAIN ----- */
+  .main {
+    padding: var(--padding-container-mobile);
+  }
+
+  /* ----- ASIDE ----- */
+  .aside {
+    padding: var(--padding-container-mobile);
+  }
+  /* ----- FOOTER ----- */
+  .footer {
+    padding: var(--padding-container-mobile);
+  }
+}
+
+@media (max-width: 480px) {
+  /* ----- MAIN ----- */
+  .main {
+    width: 100%;
+    flex-direction: column;
+    gap: 5em;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .main__image {
+    content: url(./assets/images/image-web-3-mobile.jpg);
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .info__title {
+    padding-right: 1em;
+  }
+
+  /* ----- ARTICLE ----- */
+  .article {
+    width: 100%;
+  }
+  /* ----- ASIDE ----- */
+  .aside {
+    flex-direction: column;
+  }
 }
