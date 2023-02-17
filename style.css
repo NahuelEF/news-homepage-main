@@ -83,6 +83,7 @@ body {
   color: var(--dark-grayish-blue);
 }
 .link__text:hover {
+  transition: 0.5s;
   color: var(--soft-red);
 }
 
@@ -155,6 +156,7 @@ body {
 }
 
 .description__button:hover {
+  transition: 0.5s;
   background-color: var(--very-dark-blue);
 }
 
@@ -202,11 +204,12 @@ body {
 }
 
 .new__title:hover {
+  transition: 0.5s;
   color: var(--soft-orange);
 }
 
 .new__paragraph {
-  color: var(--dark-grayish-blue);
+  color: var(--grayish-blue);
   line-height: 1.6;
 }
 
@@ -251,6 +254,7 @@ body {
   cursor: pointer;
 }
 .ranking__title:hover {
+  transition: 0.5s;
   color: var(--soft-red);
 }
 
