@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [News Homepage Main](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/NahuelEF/news-homepage-main.git)
+- Live Site URL: [News Homepage Main](https://nahuelef.github.io/news-homepage-main/)
 
 ## My process
 
